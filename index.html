@@ -1,18 +1,84 @@
 <html lang="ja">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
 	<title>FAQ</title>
 	<style>
+		html {
+			font-size: 16px;
+			-webkit-text-size-adjust: 100%;
+			text-size-adjust: 100%;
+		}
+
 		.qa-001 {
 			max-width: 100%;
 			margin-bottom: 7px;
 			border: 2px solid #74fbd4;
 			border-radius: 5px;
-			font-size: 32px;
-			/* 2rem = 32px */
+			font-size: 1rem;
 			font-family: "Roboto", sans-serif;
+		}
+
+		/* iPhone 13 (390px x 844px, DPR 3) */
+		@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
+			.qa-001 {
+				font-size: 2rem;
+				/* 32px specifically for iPhone 13 */
+			}
+		}
+
+		/* iPhone 14 (same as iPhone 13: 390px x 844px, DPR 3) */
+		/* Already covered by iPhone 13 query */
+
+		/* iPhone 13 Pro / 14 Pro (390px x 844px, DPR 3) */
+		/* Already covered by iPhone 13 query */
+
+		/* iPhone 13 Pro Max / 14 Pro Max (428px x 926px, DPR 3) */
+		@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+			.qa-001 {
+				font-size: 2.2rem;
+				/* 35.2px, slightly larger for bigger screen */
+			}
+		}
+
+		/* iPhone 12 / 12 Pro / 13 Mini (390px x 844px, DPR 3) */
+		/* Already covered by iPhone 13 query */
+
+		/* iPhone 12 Pro Max (428px x 926px, DPR 3) */
+		/* Already covered by iPhone 13 Pro Max query */
+
+		/* iPhone 11 / XR (414px x 896px, DPR 2) */
+		@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
+			.qa-001 {
+				font-size: 1.75rem;
+				/* 28px, balanced for DPR 2 and larger width */
+			}
+		}
+
+		/* iPhone X / XS / 11 Pro (375px x 812px, DPR 3) */
+		@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+			.qa-001 {
+				font-size: 1.875rem;
+				/* 30px, slightly smaller for narrower screen */
+			}
+		}
+
+		/* iPhone 11 Pro Max (414px x 896px, DPR 3) */
+		@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+			.qa-001 {
+				font-size: 2rem;
+				/* 32px, matches iPhone 13 for consistency */
+			}
+		}
+
+		/* iPhone SE (2nd/3rd Gen) (375px x 667px, DPR 2) */
+		@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+			.qa-001 {
+				font-size: 1.5rem;
+				/* 24px, smaller for smaller screen */
+			}
 		}
 
 		.qa-001 summary {
@@ -20,8 +86,7 @@
 			justify-content: space-between;
 			align-items: center;
 			position: relative;
-			padding: 16px 32px 16px 48px;
-			/* 1em = 16px, 2em = 32px, 3em = 48px */
+			padding: 1em 2em 1em 3em;
 			color: #333333;
 			font-weight: 600;
 			cursor: pointer;
@@ -30,11 +95,9 @@
 		.qa-001 summary::before,
 		.qa-001 p::before {
 			position: absolute;
-			left: 16px;
-			/* 1em = 16px */
+			left: 1em;
 			font-weight: 600;
-			font-size: 20.8px;
-			/* 1.3em = 20.8px */
+			font-size: 1.3em;
 		}
 
 		.qa-001 summary::before {
@@ -50,7 +113,7 @@
 			border-bottom: 3px solid #333333b3;
 			border-right: 3px solid #333333b3;
 			content: '';
-			transition: transform 0.5s;
+			transition: transform .5s;
 		}
 
 		.qa-001[open] summary::after {
@@ -62,10 +125,9 @@
 			transform: translateY(-10px);
 			opacity: 0;
 			margin: 0;
-			padding: 4.8px 48px 24px;
-			/* 0.3em = 4.8px, 3em = 48px, 1.5em = 24px */
+			padding: .3em 3em 1.5em;
 			color: #333;
-			transition: transform 0.5s, opacity 0.5s;
+			transition: transform .5s, opacity .5s;
 		}
 
 		.qa-001[open] p {
@@ -82,6 +144,14 @@
 </head>
 
 <body>
+
+
+
+
+
+
+
+
 
 	<details class="qa-001">
 		<summary> 本体の電源が入らない。 </summary>
@@ -387,6 +457,14 @@
 			「今日の天気」、「明日の天気」、「ゴミの日」、「リビング照明つけて」、「温度を教えて」など。どんな発話をすればいいかは、9DOTs本体の画面右下の緑のキャラクタであるグラモンをタップしても確認することができます。<br>
 			グラモンとの話を終了したい場合、「キャンセル」と発話してください。 </p>
 	</details>
+
+
+
+
+
+
+
+
 
 </body>
 
