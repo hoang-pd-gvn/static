@@ -7,9 +7,14 @@
 	<title>FAQ</title>
 	<style>
 		html {
-			font-size: 16px;
-			-webkit-text-size-adjust: 100%;
+			font-size: 12px;
 			text-size-adjust: 100%;
+		}
+
+		@media screen and (max-device-width: 480px) {
+			body {
+				-webkit-text-size-adjust: 100%;
+			}
 		}
 
 		.qa-001 {
@@ -21,65 +26,8 @@
 			font-family: "Roboto", sans-serif;
 		}
 
-		/* iPhone 13 (390px x 844px, DPR 3) */
-		@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {
-			.qa-001 {
-				font-size: 2rem;
-				/* 32px specifically for iPhone 13 */
-			}
-		}
 
-		/* iPhone 14 (same as iPhone 13: 390px x 844px, DPR 3) */
-		/* Already covered by iPhone 13 query */
 
-		/* iPhone 13 Pro / 14 Pro (390px x 844px, DPR 3) */
-		/* Already covered by iPhone 13 query */
-
-		/* iPhone 13 Pro Max / 14 Pro Max (428px x 926px, DPR 3) */
-		@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
-			.qa-001 {
-				font-size: 2.2rem;
-				/* 35.2px, slightly larger for bigger screen */
-			}
-		}
-
-		/* iPhone 12 / 12 Pro / 13 Mini (390px x 844px, DPR 3) */
-		/* Already covered by iPhone 13 query */
-
-		/* iPhone 12 Pro Max (428px x 926px, DPR 3) */
-		/* Already covered by iPhone 13 Pro Max query */
-
-		/* iPhone 11 / XR (414px x 896px, DPR 2) */
-		@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) {
-			.qa-001 {
-				font-size: 1.75rem;
-				/* 28px, balanced for DPR 2 and larger width */
-			}
-		}
-
-		/* iPhone X / XS / 11 Pro (375px x 812px, DPR 3) */
-		@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-			.qa-001 {
-				font-size: 1.875rem;
-				/* 30px, slightly smaller for narrower screen */
-			}
-		}
-
-		/* iPhone 11 Pro Max (414px x 896px, DPR 3) */
-		@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
-			.qa-001 {
-				font-size: 2rem;
-				/* 32px, matches iPhone 13 for consistency */
-			}
-		}
-
-		/* iPhone SE (2nd/3rd Gen) (375px x 667px, DPR 2) */
-		@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-			.qa-001 {
-				font-size: 1.5rem;
-				/* 24px, smaller for smaller screen */
-			}
-		}
 
 		.qa-001 summary {
 			display: flex;
